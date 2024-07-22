@@ -1,0 +1,247 @@
+<style>
+    *{
+        margin: 0 auto;
+        box-sizing: border-box;
+        font-family: "Comfortaa", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        scroll-behavior: smooth;
+    }
+    .nav-bar{
+        width: 100%;
+        height: 54px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: fixed;
+        background-color: white;
+        top: 0;
+        left: 0;
+        z-index: 10;
+    }
+    a{
+        font-size: 18px;
+        text-decoration: none;
+        color: rgb(94, 94, 94);
+        transition: 0.2s;
+    }
+    a:hover{
+        color: black;
+        font-size: 20px;
+    }
+    .content{
+        width: 100%;
+    }
+    #home{
+        width: 100%;
+        height: 100%;
+    }
+    #home img{
+        position: absolute;
+        top: 54px;
+        width: 1280px;
+        object-fit: cover;
+    }
+    #bg{
+        z-index: 1;
+    }
+    #man{
+        transform-origin: bottom;
+        z-index: 2;
+    }
+    h1{
+        font-size: 50px;
+    }
+    #home h1{
+        position: relative;
+        top: 54px;
+        font-size: 100px;
+        color:white;
+        z-index: 3;
+    }
+    #country{
+        width: 100%;
+        height: 100vh;
+        margin-top: 580px;
+        display: flex;
+        margin-bottom: 40px;
+    }
+    .description{
+        width: 40%;
+    }
+    .description p{
+        margin-top: 30px;
+        font-size: 18px;
+        font-weight: 200;
+    }
+    button{
+        width: 200px;
+        height: 40px;
+        background-color: rgb(1, 0, 12);
+        color: #fff;
+        font-size: 18px;
+        border: none;
+        border-radius: 15px;
+        margin-top: 100px;
+        cursor: pointer;
+    }
+    .swiper {
+      width: 50%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    #about{
+        width: 100%;
+        height: 830px;
+        display: flex;
+        margin-bottom: 40px;
+        background-color: rgb(247, 247, 247);
+        flex-direction: column;
+        align-items: center;
+    }
+    .row{
+        width: 100%;
+        margin-left: 230px;
+    }
+    .row img{
+        margin-right: 30px;
+    }
+    #about img{
+        width: 30%;
+        border-radius: 5px;
+        transition: 0.4s;
+        cursor: pointer;
+        margin-top: 40px;
+    }
+    #about img:hover{
+        width: 40%;
+    }
+    .gallary{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #contact{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    #contact p{
+        margin-bottom: 15px;
+    }
+
+</style>
+
+<div class="nav-bar">
+    <a href="#home">Главная</a>
+    <a href="#country">О стране</a>
+    <a href="#about">О нас</a>
+    <a href="#contact">Контакты</a>
+</div>
+<div class="content">
+    <div id="home">
+        <h1 id="text">SWIT-TRAVEL TEAM</h1>
+        <img src="/public/mountain.jpg" id="bg">
+        <img src="/public/human_on_mn.png" id="man">
+    </div>
+    <div id="country">
+        <div class="description">
+            <h1>ABOUT SWITZERLAND</h1>
+            <p>Швейцария - это страна, которая покоряет своей неповторимой красотой и уникальным сочетанием природных и культурных достопримечательностей. </p>
+            <p>Расположенная в самом сердце Европы, Швейцария предлагает путешественникам незабываемые впечатления. Величественные Альпы с их снежными вершинами, живописными долинами и кристально чистыми озерами создают поистине волшебный пейзаж.</p>
+            <p>Здесь можно насладиться захватывающими видами, покорить горные вершины, совершить увлекательные пешие прогулки или отдохнуть на живописных берегах озер.</p>
+            <a href="#about"><button>Подробнее</button></a>
+        </div>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="/public/sw1.jpg"></div>
+                <div class="swiper-slide"><img src="/public/sw2.jpg"></div>
+                <div class="swiper-slide"><img src="/public/sw3.jpeg"></div>
+                <div class="swiper-slide"><img src="/public/sw4.jpg"></div>
+                <div class="swiper-slide"><img src="/public/sw5.jpg"></div>
+                <div class="swiper-slide"><img src="/public/sw6.jpg"></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <div id="about">
+        <h1 style="margin-top: 50px;">ABOUT SWIT-TRAVEL TEAM</h1>
+        <div class="gallary">
+            <div class="row">
+                <img src="/public/ps2.jpg" alt="">
+                <img src="/public/ps3.jpg" alt="">
+            </div>
+            <div class="row">
+                <img src="/public/ps1.jpg" alt="">
+                <img src="/public/ps4.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="cont-des">
+            <p>Почта</p>
+            <p>Номер телефона</p>
+        </div>
+        <div class="num">
+            <p>switravel@gmail.com</p>
+            <p>+7(999)666-52-52</p>
+        </div>
+    </div>
+</div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+<script>
+    gsap.to('#bg',{
+        scrollTrigger:{
+            scrub: 1
+        },
+        scale: 1.5
+    })
+
+    gsap.to('#man',{
+        scrollTrigger:{
+            scrub: 1
+        },
+        scale: 1.5,
+        y: 150
+    })
+    gsap.to('#text',{
+        scrollTrigger:{
+            scrub: 1
+        },
+        y: -300
+    })
+    const swiper = new Swiper(".mySwiper", {
+      cssMode: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      mousewheel: true,
+      keyboard: true,
+    });
+</script>
